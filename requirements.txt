@@ -5,3 +5,9 @@ ipdb>=0.8
 ipython>=3.1.0
 psycopg2>=2.6
 Werkzeug>=0.10.4
+djangorestframework==3.1.1
+djangorestframework-jwt==1.5.0
+
+
+Markdown==2.6.2
+django-filter==0.10.0

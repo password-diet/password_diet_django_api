@@ -40,7 +40,7 @@ INSTALLED_APPS = (
 
     # 3rd-party apps.
     'django_extensions',
-
+    'rest_framework',
     # Project apps.
     #'password_diet_api.apps.',
 )
@@ -185,4 +185,19 @@ LOGGING = {
             'level': 'INFO',
         }
     }
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+    ),
+}
+
+JWT_AUTH = {
+    'JWT_ALLOW_REFRESH': True,
 }
