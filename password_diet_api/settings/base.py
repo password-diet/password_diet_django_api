@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'rest_framework',
     # Project apps.
     #'password_diet_api.apps.',
+    'api',
 )
 
 MIDDLEWARE_CLASSES = (
